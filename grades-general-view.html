@@ -1,32 +1,54 @@
- <!DOCTYPE html>
-<html>
-<head>
-    <title>Online Journal</title>
-    <!-- meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>School Journal - Overview of grades and activity</title>
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap4-charming.min.css">
+      <link rel="stylesheet" href="css/style.css">
+        <style>
+      /* body {
+                background-color: linen;
+            } */
+      .navbar-text {
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
 
-    <!-- links-->
-    
-    <!-- fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-    
-    <!-- bootstrap-4-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
- 
-    <!-- font awesome-->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-    <!-- mail styles-->
-    <link rel="stylesheet" href="css/style.css">
-</head>
 <body>
-    <!-- logo-->
-    <div class="container">
-        <h1>School journal</h1>
-    </div>
+     <!--  navigation -->
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+              <img src="https://placeimg.com/30/30/tech/grayscale" width="30" height="30" class="d-inline-block align-top" alt="">
+              School Journal
+              </a>
+        <div class="navbar navbar-right">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Schedule</a>
+          <a class="nav-item nav-link" href="#">Grades/Activity</a>
+          <a class="nav-item nav-link" href="#">Hometasks</a>
+          <a class="nav-item nav-link" href="#">Emails</a>
+          <div class="navbar-text">
+            Nazarova Elena
+          </div>
+          <a href="#!" class="ht-tm-element btn btn-outline-primary">
+                  <span class="fas fa-sign-out-alt"></span>Logout</a>
+        </div> <!--end of the right part of navbar -->
+      </nav>    <!-- end of navigation -->
 
+    <div class="title">
+      <div>
+        <span class="student">Masha</span>
+        <span class="class">7B</span>
+      </div>
+      <div class="table-name">Overview of grades and activity</div>
+      <div class="year">2017/18</div>
+    </div>
     <div class="table-responsive">
         <table class="table table-bordered table-striped">
           <tr>
@@ -41,7 +63,14 @@
           </tr>
           <tr>
             <td>Mathematics</td>
-            <td>5 2 3 4 5 5</td>
+            <td>
+              <div class="grade activity">5</div>
+              <div class="grade">2</div>
+              <div class="grade">3</div>
+              <div class="grade activity">4</div>
+              <div class="grade">5</div>
+              <div class="grade">5</div>
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -68,7 +97,38 @@
             <td></td>            
             <td></td>
           </tr>
+          <tr>
+              <td>Geography</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>            
+              <td></td>
+          </tr>
+          <tr>
+              <td>History</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>            
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ethics</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>            
+              <td></td>                   
+            </tr>
         </table>
     </div> 
+  </div>
 </body>
 </html> 

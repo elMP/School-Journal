@@ -1,3 +1,26 @@
 .dropdown-menu{
 	display:none;
 }
+
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.table-name {
+	font-size: 32px;
+}
+
+.grade {
+	display: inline-block;
+	width: 20px;
+	height: 35px;
+}
+
+.activity {
+	background-image: url('../images/star.png');
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
