@@ -1,3 +1,52 @@
 .dropdown-menu{
 	display:none;
 }
+
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 20px 0;
+}
+
+.table-name {
+	font-size: 32px;
+}
+
+.grade {
+	display: inline-block;
+	width: 20px;
+	height: 35px;
+}
+
+.activity {
+	background-image: url('../images/star.png');
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+img {
+	margin-top: 100px;
+}
+#first-registration {
+	display: none;
+}
+#navbar {
+	display: none;
+}
+.schedule {
+	display: none;
+}
+#grades {
+	display: none;
+}
+.redbox {
+	color: red;
+	width: 620px;
+	position: relative;
+	margin: 10%;
+	height: 100px;
+	border-color: #008a77; 
+    border-style: solid; 
+    padding: 5px; 
+}
