@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Journal</title>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- links-->
+    
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    
+    <!-- bootstrap-4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+   
+    <!-- chaming-themes-->
+    <link rel="stylesheet" href="css/bootstrap4-charming.min.css">
+    
+    
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- mail styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* body {
+                background-color: linen;
+            } */
+      body {
+        background-color:#f2f2f2;
+        opacity: 0.9;
+        background-size: 100% 100%;
+        filter: grayscale(0.5);
+        font-family: 'Montserrat', sans-serif;
+      
+        color: #4c5667;
+        background: #fff;
+        font-size: 15px;
+        line-height: 22px;
+        overflow-x: hidden;
+      }
+
+      .navbar-brand {
+        color: #f2f2f2;
+        font-size: 20px;
+        text-transform: uppercase;;
+      }
+      .navbar-light {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;;
+      }
+      .navbar-text {
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+      .title{
+        padding:1.5em 0;
+      }
+      .link_l_arrow::before{
+        content:"< ";
+      }
+      .link_r_arrow::after{
+        content:" >";
+      }
+    
+      .navbar-text {
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+      h1 {
+        text-align: center;
+        padding-top: 150px;
+      }
+      h2 {
+      text-align: center  
+      }
+
+      a:hover {
+        background-color:#d9d9d9;
+        color: #00b33c;
+        border-radius: 5px;
+        box-shadow: 1px white;
+        font-size: 1.1em;
+        filter: contrast(1.5);
+      }
+    
+      ul>li {
+        display: block;
+      }
+      
+
+      li {
+        display: list-item;
+      }
+      li:hover {
+          box-shadow: 1px white;
+          font-size: 1.2em;
+          filter: contrast(1.5);
+          color: black;
+      }
+
+      img {
+        width: 48px;
+        filter: contrast(200%);
+        filter: brightness(1.35);
+        
+      }
+
+      #icons {
+        padding-top: 30px;
+        vertical-align: middle;
+      }
+
+      #style-switcher .bottom {
+        background: #FFF;
+        color: #252525;
+        padding: 0;
+      }
+
+
+     #style-switcher {
+      left: -189px;
+      position: fixed;
+      top: 17%;
+      width: 189px;
+      z-index: 9999;
+      padding: 10px 5px;
+      
+    
+    }
+
+    #style-switcher a {
+
+        background: #FFF;
+        box-shadow: 2px 2px 0 0 rgba(0, 0, 0, .08);
+
+      }
+
+      #style-switcher div h3 {
+          color: #1D1D1D;
+          font-size: 16px;
+          margin: 8px 3px 12px;
+        }
+
+      ul.pattern {
+        list-style: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        border-radius: 0;
+      }
+
+      ul.pattern li {
+          float: left;
+          margin: 2px;
+      }
+      
+    </style>
+    
+</head>
+<body>
+
+      <!-- Sticky navbar -->
+        <div class="navbar navbar-expand-lg navbar-fixed-top sticky" style="height: 90px; background-color: #262626">
+         
+            <div class="container">
+              <!-- Navbar header-->
+                <div class="navbar-header">
+                      <!--navbar brand -->
+
+                    
+                    <!-- Responsive menu button -->
+                    
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                   
+
+                      
+
+                      <!-- Logo -->
+                      <nav class="navbar navbar-collapse">
+                          <span class="navbar-brand mb-0 h1">
+                            <i class="fas fa-book fa-lg" style="font-size:1.5em; color:#00b33c"></i>
+                          School journal</span>
+                      
+                      </nav>
+                  
+
+                </div>
+        <!-- Navbar header end --> 
+        <!-- Start Menu -->
+                    <div class="navbar-collapse collapse" id="navbar-menu">
+                      <!-- The left part of menu -->
+                        <ul class="nav justify-content-center">
+                          
+
+                                <!-- home -->
+                              <li class="nav-item">
+                                  <a class=" nav-item nav-link active" href="#">Home</a>
+                              </li>
+                              <!-- Featutures --> 
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#">Features</a>
+                              </li>
+
+                              <!--plans -->
+
+
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Plans
+                                  </a>
+                                
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Plan for today</a>
+                                    <a class="dropdown-item" href="#">Plan for week</a>
+                                    <a class="dropdown-item" href="#">Plan for term</a>
+                                  </div>
+                              </li>  
+
+                              <!-- Emails-->
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Email</a>
+                              </li>
+
+                              <!-- about-->
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#">About</a>
+                              </li>
+
+
+
+                        </ul>
+                      <!-- End of the left part menu-->
+                      <!-- The right part of menu-->
+                        <ul class="nav justify-content-end" style="margin-left: 200px">
+                             
+                              <!-- login-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">login</a>
+
+                            </li>
+                            <!--logout -->
+                            <li class="nav-item">
+                                <a href="#!" class="ht-tm-element btn btn-success btn-bordered btn-inverse">
+                                <span class="fas fa-sign-out-alt"></span>Signup</a>
+
+                            </li>
+
+
+                        </ul>
+
+                      <!-- End of the part menu-->
+                    </div>
+
+        <!--End Menu -->
+      </div>
+    
+      </div>
+
+          <!-- announcement-->
+           <div class="container-fluid" style="margin-top:100px; text-align: center;">
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <span style = "font-size: 25px">School Journal -</span>
+                      <span style="color:#00b33c; font-size: 25px">Be always in touch with your school!</span>
+                    </ul>
+                    
+                   
+                  </p>
+                  <p>
+                    Our journal makes communication between school and parents easy as a breeze. Be on top of things!
+                  </p>
+                </div>
+              </div>
+             
+           </div>
+
+
+        <!-- button for start-->
+        <div class="container" style="margin-top: 50px; margin-bottom: 50px; text-align: center; border-radius: 10px; box-shadow: 5px grayscale">
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn-success btn-lg animated " role="button" aria-pressed="true visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;">Get Started</button>
+
+            </div>
+          </div>
+        </div>
+
+<!-- switcher-->
+  <div id="style-switcher" style="left:-189px">
+  <div class="top">
+    <h3>Select your color</h3>
+    <ul class="pattern">
+      <li>
+        <img src="images/color-blue.png" alt="blue">
+      </li>
+      <li>
+        <img src="images/color-white.png" alt="white">
+      </li>
+      <li>
+        <img src="images/color-black.png" alt="black">
+      </li>
+      <li>
+        <img src="images/color-green.png" alt="green">
+      </li>
+      <li>
+        <img src="images/color-red.png" alt="red">
+      </li>
+      <li>
+        <img src="images/color-light-green.png" alt="green">
+      </li>
+      <li>
+        <img src="images/color-violet.png" alt="violet">
+      </li>
+      <li>
+        <img src="images/color-yellow.png" alt="yellow">
+      </li>
+      <li>
+        <img src="images/color-brown.png" alt="brown">
+      </li>
+    </ul>
+  </div>
+  
+<!--end of the switcher --> 
+ 
+  </div>
+
+<!-- spinner -->       
+ <div class="bottom" id="spinner">
+    <i class="fas fa-cog fa-2x fa-pulse"></i>
+  </div>
+
+
+        <!-- services -->
+          <div class="container-fluid fixed-bottom" style="height:540px; background-color:#595959; color:#f2f2f2">
+            <!-- titles -->
+              <div class="row" style="padding-top: 50px">
+                <div class="col-12" style="text-align: center">
+                    
+                   <span style="text-transform: uppercase; color:#00b33c">Servises</span> 
+                    <h2>
+                    Our Best Features</h2>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12" style="text-align: center">
+                <img src="images/substract.png" alt="line">
+              </div>
+            </div>
+
+              <!-- icons -->
+                <div class="container" style="text-align: center" id="icons">
+                  
+                    <div class="row">
+                      
+                      <!-- backpack icon -->
+                      <div class="col-xl-4">
+                            
+                            <img src="images/backpack.png" alt="backpack">
+                              <h4>Our libraries</h4>
+                              <p>We put a lot of effort in design, as it’s the most important ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                
+                      </div>
+                      <!-- desk icon -->
+                      <div class="col-xl-4">
+                        <img src="images/desk.png" alt="desk">
+                            <h4>Help for learning</h4>
+                            <p>
+                              We put a lot of effort in design, as it’s the most important ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.
+                            </p>
+                      </div>
+                      <!-- open book icon -->
+                      <div class="col-xl-4">
+                            
+                          <img src="images/open-book.png" alt="openbook">
+                          <h4>Write your teacher</h4>
+                            <p>We put a lot of effort in design, as it’s the most important ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                      </div>
+                    </div>
+
+                </div>
+                  
+          </div>
+  <script type="text/javascript">
+    //$().button('toggle');
+
+
+    const pressSpinner = document.querySelector('#spinner');
+    //console.log(pressSpinner);
+
+    let openHideSwitcher = function(event){
+        let prsSpinner = event.target.parentNode.parentElement.previousElementSibling;
+        //console.log(prsSpinner);
+        if (prsSpinner.style.left == "0px") {
+          prsSpinner.style.left = "-189px";
+        } else {
+          prsSpinner.style.left = "0px";
+        }
+    }
+
+    pressSpinner.addEventListener('click', openHideSwitcher);
+  </script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</body>
