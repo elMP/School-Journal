@@ -3,7 +3,14 @@ const menuLinks = document.querySelector('.dropdown-menu');
 const btnSubmitRegistration = document.querySelector('.btn-primary.login');
 const btnDropdownMenu = document.querySelector('.dropdown-menu');
 const partNavbar = document.querySelector('#navbar');
-//console.log(btnDropdownMenu, partNavbar);
+const btnFirstRegistration = document.querySelector('#btnRegistration');
+const journalNavbar = document.querySelector('.journal_navbar');
+const firstRegistrationForm = document.querySelector('#first-registration');
+const activityTable = document.querySelector('.activity');
+const scheduleDay = document.querySelector('.schedule');
+const gradesActivity = document.querySelector('#grades');
+const  firstRegistrationSendForm = document.querySelector('#registration');
+console.log(firstRegistrationSendForm);
 
 window.onload = function(elements){
 	btnDropdownMenu.style.display = 'none';
@@ -38,10 +45,29 @@ let showHideNavbar = function(event, elem = btnDropdownMenu){
 	};
 
 
+let showHideRegistrationForm = function(event, elem){
+	console.log('Hura!');
+	journalNavbar.style.display = 'none';
+	firstRegistrationForm.style.display = 'block';
+
+}
+
+let sendForm = function(event, elem){
+	console.log('Hura!');
+	firstRegistrationForm.style.display = 'none';
+	journalNavbar.style.display = 'block';
+	let addElementContainer = document.createElement('div');
+	addElementContainer.classList.add("redbox");
+	addElementContainer.innerHTML = "Please, check your email for confirm";
+	journalNavbar.appendChild(addElementContainer);
+
+}
 
 
 
 
 
+btnFirstRegistration.addEventListener("click", showHideRegistrationForm, true );
 btnSubmitRegistration.addEventListener('click', showHideNavbar);
 btnMenu.addEventListener('click', openHideDropdownMenu);
+firstRegistrationForm.addEventListener('click', sendForm);
