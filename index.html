@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Journal</title>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- links-->
+    
+    <!-- fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    
+    <!-- bootstrap-4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+   
+
+    <!-- owl-carousel-->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    
+    <!-- font awesome-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- mail styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* body {
+                background-color: linen;
+            } */
+      .navbar-text {
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+      .title{
+        padding:1.5em 0;
+      }
+      .link_l_arrow::before{
+        content:"< ";
+      }
+      .link_r_arrow::after{
+        content:" >";
+      }
+    
+      .navbar-text {
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+    </style>
+    
+</head>
+<body>
+    <!-- logo-->
+  <div class="container id="logo">
+        <div class="row">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://placeimg.com/30/30/tech/grayscale" width="200" height="200"
+              class="d-inline-block align-top" alt="logotype">
+          </div>
+          <div class="col-8">
+            <h1>School online journal</h1>
+        </div>
+      </div>
+        
+    </div>
+
+        <!-- registration form-->
+
+<div class="container" id="first-registration">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-xl-4">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-group col-xl-4">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+        </div>
+        <div class="form-group col-xl-4">
+          <label for="inputPassword4">Confirm password</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="Confirm password">
+        </div>
+
+
+      </div>
+      <div class="container">
+        <div class="form-group">
+        <label for="inputParentsName">Parent's Name</label>
+        <input type="text" class="form-control" id="inputParentsName" placeholder="Name and Surname">
+      </div>
+      <div class="form-group">
+        <label for="inputPupilsName">Pupil's name</label>
+        <input type="text" class="form-control" id="inputPupilsName" placeholder="Pupil's name">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="form-row">
+        <div class="form-group col-xl-6 col-md-4">
+          <label for="inputSchool">Name of the School</label>
+          <input type="text" class="form-control" id="inputSchool">
+        </div>
+        <div class="form-group col-xl-4 col-md-4">
+          <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          
+        </div>
+        <div class="form-group col-xl-2 col-md-4">
+          <label for="inputState">The class numbers</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+          </div>
+      </div>
+    </div>
+
+
+      <div class="form-group">
+        
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Check me out
+          </label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" id = "registration">Sign in</button>
+      </form>
+</div>
+
+  
+   <!--registration form-->
+
+   <!-- login form -->
+   <div class="container-fluid journal_navbar">
+     <div class="row">
+        <div class="col-xl-offset-4 col-xl-8">
+          <form class="form-inline">
+
+              <div class="form-group">
+              
+                  <button class="btn btn-primary" id = "btnRegistration" type="submit">First registration</button>
+                 
+                  
+              </div>
+              <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                  <label class="sr-only" for="exampleInputPassword3">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+              </div>
+              <div class="checkbox">
+                  <label>
+                  <input type="checkbox"> Remember me
+                </label>
+              </div>
+            <button type="submit" class="btn btn-primary login">Sign in</button>
+          </form>
+        </div>
+         
+     </div>
+   </div>
+        
+    <!- grid-->
+
+    <!-- content -->
+    
+    <!-- navbar-->
+    <div class="container-fluid activity" id = "navbar">
+    
+
+      <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="#">Nazarova Elena</a>
+          <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Schedule</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Grades/Activity</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Hometasks</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Email</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i>Personal Date</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>logout</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+              </li>
+          </ul>
+            <!--<form class="form-inline pull-xs-right">
+                <input class="form-control" type="text" placeholder="Search">
+                <button class="btn btn-success-outline" type="submit">Search</button>
+          </form>-->
+        </nav>      
+    </div>
+
+<!-- page from grades-general.html-->
+<!--<nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+              <img src="https://placeimg.com/30/30/tech/grayscale" width="30" height="30" class="d-inline-block align-top" alt="">
+              School Journal
+              </a>
+        <div class="navbar navbar-right">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Schedule</a>
+          <a class="nav-item nav-link" href="#">Grades/Activity</a>
+          <a class="nav-item nav-link" href="#">Hometasks</a>
+          <a class="nav-item nav-link" href="#">Emails</a>
+          <div class="navbar-text">
+            Nazarova Elena
+          </div>
+          <a href="#!" class="ht-tm-element btn btn-outline-primary">
+                  <span class="fas fa-sign-out-alt"></span>Logout</a>
+        </div> <!--end of the right part of navbar -->
+   <!-- </nav>    <!-- end of navigation -->
+
+    <div class="container" id = "grades">
+      <div class="title">
+        <div>
+          <span class="student">Masha</span>
+          <span class="class">7B</span>
+        </div>
+        <div class="table-name">Overview of grades and activity</div>
+        <div class="year">2017/18</div>
+      </div>
+      
+      <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tr>
+                <th>Subject</th>
+                <th>Grades and activity</th>
+                <th>Skipped</th>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th>Q4</th>
+                <th>End of year</th>
+              </tr>
+              <tr>
+                <td>Mathematics</td>
+                <td>
+                  <div class="grade activity">5</div>
+                  <div class="grade">2</div>
+                  <div class="grade">3</div>
+                  <div class="grade activity">4</div>
+                  <div class="grade">5</div>
+                  <div class="grade">5</div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>English</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            
+              </tr>
+              <tr>
+                <td>Polish</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            
+                <td></td>
+              </tr>
+              <tr>
+                  <td>Geography</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>            
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>History</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>            
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Ethics</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>            
+                  <td></td>                   
+                </tr>
+            </table>
+        </div> 
+      </div>
+    </div>
+
+
+    <!-- schedule-for-today-->
+    <!--<nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+              <img src="https://placeimg.com/30/30/tech/grayscale" width="30" height="30" class="d-inline-block align-top" alt="">
+              School Journal
+              </a>
+        <div class="navbar navbar-right">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Schedule</a>
+          <a class="nav-item nav-link" href="#">Grades/Activity</a>
+          <a class="nav-item nav-link" href="#">Hometasks</a>
+          <a class="nav-item nav-link" href="#">Emails</a>
+          <div class="navbar-text">
+            Nazarova Elena
+          </div>
+          <a href="#!" class="ht-tm-element btn btn-outline-primary">
+                  <span class="fas fa-sign-out-alt"></span>Logout</a>
+        </div>        
+    </nav> -->
+    
+
+    <div class="container schedule">
+      <div class="title">
+        <div>
+          <span class="student">Masha</span>
+          <span class="class">7B</span>
+        <span class="table-name">Lesson schedule</span>
+        <div class="date">Today, 21st of February</div>
+      </div>
+    </div>
+
+      <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tr>
+                <th class="lesson_headline">Subject</th>
+                <th class="lesson_headline">Home task</th>
+                <th class="lesson_headline">Start time</th>
+                <th class="lesson_headline">Grade</th>
+                <th class="lesson_headline">Lesson activity</th>
+                <th class="lesson_headline">Lesson presence</th>
+                <th class="lesson_headline">Comment</th>
+              </tr>
+              <tr>
+                <td class="lesson_name">History</td>
+                <td class="lesson_home_task">Ancient Greece</td>
+                <td class="lesson_start_time">8:30</td>
+                <td class="lesson_grade">5</td>
+                <td class="lesson_activity">Good</td>
+                <td class="lesson_presence"></td>
+                <td class="lesson_comment"></td>
+              </tr>
+              <tr>
+                <td class="lesson_name">Maths</td>
+                <td class="lesson_home_task">Fractions</td>
+                <td class="lesson_start_time">9:30</td>
+                <td class="lesson_grade">5</td>
+                <td class="lesson_activity">Good</td>
+                <td class="lesson_presence"></td>
+                <td class="lesson_comment"></td>
+              </tr>
+              <tr>
+                <td class="lesson_name">English</td>
+                <td class="lesson_home_task">Passive Voice, 20 senteces</td>
+                <td class="lesson_start_time">10:30</td>
+                <td class="lesson_grade"></td>
+                <td class="lesson_activity">Poor</td>
+                <td class="lesson_presence"></td>
+                <td class="lesson_comment"></td>
+              </tr>
+              <tr>
+                <td class="dinner_break" colspan="2">Dinner break</td>
+                <td class="lesson_start_time">11:30</td>
+                <td colspan="4"></td>
+              </tr>
+              <tr>
+                  <td class="lesson_name">Chemistry</td>
+                  <td class="lesson_home_task"></td>
+                  <td class="lesson_start_time">12:30</td>
+                  <td class="lesson_grade"></td>
+                  <td class="lesson_activity"></td>
+                  <td class="lesson_presence">Skipped</td>
+                  <td class="lesson_comment">Colloquium was missed</td>
+              </tr>
+              <tr>
+                  <td class="lesson_name">Geography</td>
+                  <td class="lesson_home_task"></td>
+                  <td class="lesson_start_time">13:30</td>
+                  <td class="lesson_grade"></td>
+                  <td class="lesson_activity">Average</td>
+                  <td class="lesson_presence"></td>
+                  <td class="lesson_comment"></td>
+              </tr>
+              <tr>
+                <td class="lesson_name">Afterclass activities</td>
+                <td class="lesson_home_task"></td>
+                <td class="lesson_start_time">14:30</td>
+                <td class="lesson_grade"></td>
+                <td class="lesson_activity"></td>
+                <td class="lesson_presence"></td>
+                <td class="lesson_comment"></td>
+              </tr>
+            </table>
+
+            <!-- prev next -->
+            <ul class="nav nav-pills justify-content-center">
+              <li class="nav-item">
+                <a class="link_l_arrow nav-link" href="#">previous day</a>
+              </li>
+              <li class="nav-item">
+                <a class="link_r_arrow nav-link" href="#">next day</a>
+              </li>
+            </ul>
+
+        </div>
+      </div>
+    </div>
+
+     <!-- dropdown menu-->
+   <div class="container-fluid">
+       <div class="row">
+           <div class="col-xl-offset-10 col-xl-2">
+                <div class="container-fluid">
+                    <div class="dropdown open dropdown-menu-right">
+                      
+                      <!-- button-->
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Show more options
+                      </button>
+                      <!-- panel dropdown-->
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here</button>
+                      </div>
+                    </div>   
+                </div>  
+
+           </div>
+       </div>
+   </div>
+
+
+      <!--footer+Copiwrite-->
+    
+
+    <!-- scripts -->
+    
+    <!--font awesome -->
+    <script src="https://use.fontawesome.com/4b77d2561d.js"></script>
+
+    <!-- popper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- jquery-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
+
+    <!-- owl-carousel -->
+
+    <script src="owlcarousel/owl.carousel.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- bootstrap 4-->
+    <script type="text/javascript" src="lib/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- main style-->
+    <script src="javascript/javascript.js"></script>
+
+    
+
+
+</body>
+</html>
