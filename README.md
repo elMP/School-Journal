@@ -9,3 +9,5 @@ The minimum operational functionality of the “School Journal” will include t
 -    Pupils marks 
 -    Additional teacher’s remarks
 The above are only essential features and it is possible to expand the journal functionality with additional features that parents and teachers will deem necessary.
+
+View this version on https://elmp.github.io/School-Journal/
