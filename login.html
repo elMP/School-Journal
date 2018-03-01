@@ -13,6 +13,7 @@
     
     <!-- bootstrap-4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
    
     <!-- chaming-themes-->
     <link rel="stylesheet" href="css/bootstrap4-charming.min.css">
@@ -23,149 +24,13 @@
 
     <!-- mail styles-->
     <link rel="stylesheet" href="css/style.css">
-     <style>
-      /* body {
-                background-color: linen;
-            } */
-       body {
-        background-color:#f2f2f2;
-        opacity: 0.9;
-        background-size: 100% 100%; 
-        /* filter: grayscale(0.5); */
-        font-family: 'Montserrat', sans-serif;
-      
-        color: #4c5667;
-        background: #fff;
-        font-size: 15px;
-        line-height: 22px;
-        overflow-x: hidden;
-      } 
-
-      .navbar-brand {
-        color: #f2f2f2;
-        font-size: 20px;
-        text-transform: uppercase;;
-      }
-      .navbar-light {
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        text-transform: uppercase;;
-      }
-      .navbar-text {
-        margin-right: 10px;
-        margin-left: 20px;
-      }
-      .title{
-        padding:1.5em 0;
-      }
-      .link_l_arrow::before{
-        content:"< ";
-      }
-      .link_r_arrow::after{
-        content:" >";
-      }
     
-      .navbar-text {
-        margin-right: 10px;
-        margin-left: 20px;
-      }
-      h1 {
-        text-align: center;
-        padding-top: 150px;
-      }
-      h2 {
-      text-align: center  
-      }
-
-      a:hover {
-        background-color:#d9d9d9;
-        color: #00b33c;
-        border-radius: 5px;
-        box-shadow: 1px white;
-        font-size: 1.1em;
-        filter: contrast(1.5);
-      }
-
-      ul>li {
-        display: block;
-      }
-      
-
-      li {
-        display: list-item;
-      }
-      li:hover {
-          box-shadow: 1px white;
-          font-size: 1.2em;
-          filter: contrast(1.5);
-          color: black;
-      }
-
-      img {
-        width: 48px;
-        filter: contrast(200%);
-        filter: brightness(1.35);
-        
-      }
-   
-    
-     #icons {
-       /*  padding-top: 30px; */
-        vertical-align: middle;
-      } 
-    
-  
-      #style-switcher .bottom {
-        background: #FFF;
-        color: #252525;
-        padding: 0;
-      }
-
-
-     #style-switcher {
-      left: -189px;
-      position: fixed;
-      top: 17%;
-      width: 189px;
-      z-index: 9999;
-      padding: 10px 5px;
-      
-    
-    }
-
-    #style-switcher a {
-
-        background: #FFF;
-        box-shadow: 2px 2px 0 0 rgba(0, 0, 0, .08);
-
-      }
-
-      #style-switcher div h3 {
-          color: #1D1D1D;
-          font-size: 16px;
-          margin: 8px 3px 12px;
-        }
-
-      ul.pattern {
-        list-style: none;
-        margin: 0;
-        overflow: hidden;
-        padding: 0;
-        border-radius: 0;
-      }
-
-      ul.pattern li {
-          float: left;
-          margin: 2px;
-      }
-      
-    </style>
     
 </head>
 <body>
 
       <!-- Sticky navbar -->
-        <div class="navbar navbar-expand-lg navbar-fixed-top sticky" style="height: 90px; background-color: #262626">
+        <div class="navbar navbar-expand-lg navbar-fixed-top sticky">
          
             <div class="container">
               <!-- Navbar header-->
@@ -186,7 +51,7 @@
                       <!-- Logo -->
                       <nav class="navbar navbar-collapse">
                           <span class="navbar-brand mb-0 h1">
-                            <i class="fas fa-book fa-lg" style="font-size:1.5em; color:#00b33c"></i>
+                            <i class="fas fa-book fa-lg" style="font-size:1.5em; color:#35bd49"></i>
                           School journal</span>
                       
                       </nav>
@@ -239,7 +104,7 @@
                         </ul>
                       <!-- End of the left part menu-->
                       <!-- The right part of menu-->
-                        <ul class="nav justify-content-end" style="margin-left: 200px">
+                        <ul class="nav justify-content-end">
                              
                               <!-- login-->
                             <li class="nav-item">
@@ -265,7 +130,7 @@
       </div>
 
           <!-- announcement-->
-           <div class="container-fluid" style="margin-top:100px; text-align: center;">
+           <div class="container-fluid" id ="announcement" style="margin-top:100px; text-align: center">
               <div class="row">
                 <div class="col">
                   <p>
@@ -285,7 +150,7 @@
 
 
         <!-- button for start-->
-        <div class="container" style="margin-top: 50px; margin-bottom: 50px; text-align: center; border-radius: 10px; box-shadow: 5px grayscale">
+        <div class="container btn_start">
           <div class="row">
             <div class="col">
               <button type="button" class="btn-success btn-lg animated " role="button" aria-pressed="true visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;">Get Started</button>
@@ -294,58 +159,68 @@
           </div>
         </div>
 
-<!-- switcher-->
-  <div id="style-switcher" style="left:-189px">
-  <div class="top">
-    <h3>Select your color</h3>
-    <ul class="pattern">
-      <li>
-        <img src="images/color-blue.png" alt="blue">
-      </li>
-      <li>
-        <img src="images/color-white.png" alt="white">
-      </li>
-      <li>
-        <img src="images/color-black.png" alt="black">
-      </li>
-      <li>
-        <img src="images/color-green.png" alt="green">
-      </li>
-      <li>
-        <img src="images/color-red.png" alt="red">
-      </li>
-      <li>
-        <img src="images/color-light-green.png" alt="green">
-      </li>
-      <li>
-        <img src="images/color-violet.png" alt="violet">
-      </li>
-      <li>
-        <img src="images/color-yellow.png" alt="yellow">
-      </li>
-      <li>
-        <img src="images/color-brown.png" alt="brown">
-      </li>
-    </ul>
-  </div>
-  
-<!--end of the switcher --> 
- 
-  </div>
 
-<!-- spinner -->       
+
+
+  <!-- switcher-->
+<!-- delete container (switcher will work)
+  <div class="container">
+    <div id="style-switcher" style="left:-189px">
+      <div class="top">
+        <h3>Select your color</h3>
+          <ul class="pattern">
+            <li>
+              <img src="images/color-blue.png" alt="blue">
+            </li>
+            <li>
+              <img src="images/color-white.png" alt="white">
+            </li>
+            <li>
+              <img src="images/color-black.png" alt="black">
+            </li>
+            <li>
+              <img src="images/color-green.png" alt="green">
+            </li>
+            <li>
+              <img src="images/color-red.png" alt="red">
+            </li>
+            <li>
+              <img src="images/color-light-green.png" alt="green">
+            </li>
+            <li>
+              <img src="images/color-violet.png" alt="violet">
+            </li>
+            <li>
+              <img src="images/color-yellow.png" alt="yellow">
+            </li>
+            <li>
+              <img src="images/color-brown.png" alt="brown">
+            </li>
+          </ul>
+  </div>-->
+  <!-- spinner -->      
+<!--
  <div class="bottom" id="spinner">
     <i class="fas fa-cog fa-2x fa-pulse"></i>
   </div>
+</div>-->
+  
+<!--end of the switcher -->
+  
+
+  
+ 
+  
+
 
 
         <!-- services -->
-          <div class="container-fluid fixed-bottom" style="height:540px; background-color:#595959; color:#f2f2f2">
+          <div class="container-fluid fixed-bottom">
             <!-- titles -->
               <div class="row" style="padding-top: 50px">
                 <div class="col-12" style="text-align: center">
                     
-                   <span style="text-transform: uppercase; color:#00b33c">Servises</span> 
+                   <span class = "best_features">Servises</span> 
                     <h2>
                     Our Best Features</h2>
                 </div>
@@ -409,4 +284,5 @@
     pressSpinner.addEventListener('click', openHideSwitcher);
   </script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
